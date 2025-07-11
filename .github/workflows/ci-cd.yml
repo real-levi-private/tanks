@@ -34,10 +34,10 @@ jobs:
 
       - name: Build backend Docker image
         run: |
-          docker build -t $IMAGE_BACKEND:latest ./backend
+          docker build -t $IMAGE_BACKEND:latest ./tanks-backend
           docker push $IMAGE_BACKEND:latest
 
       - name: Build frontend Docker image
         run: |
-          docker build -t $IMAGE_FRONTEND:latest ./frontend
+          docker build -t $IMAGE_FRONTEND:latest ./tanks-frontend
           docker push $IMAGE_FRONTEND:latest
