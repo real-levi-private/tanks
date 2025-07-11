@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'backend/**'
-      - 'frontend/**'
+      - 'tanks-backend/**'
+      - 'tanks-frontend/**'
       - '.github/workflows/**'
 
 jobs:
@@ -18,8 +18,8 @@ jobs:
 
     env:
       REGISTRY: ghcr.io
-      IMAGE_BACKEND: ghcr.io/${{ github.repository_owner }}/backend
-      IMAGE_FRONTEND: ghcr.io/${{ github.repository_owner }}/frontend
+      IMAGE_BACKEND: ghcr.io/${{ github.repository_owner }}/tanks-backend
+      IMAGE_FRONTEND: ghcr.io/${{ github.repository_owner }}/tanks-frontend
 
     steps:
       - name: Checkout code
